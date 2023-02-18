@@ -1,0 +1,61 @@
+<div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="text-center ">
+                <img src="./assets/logo.png" width="50px" alt="">
+            </div>
+            <div class="row">
+                
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading text-center mb-4 ">Crear Usuario</h3>
+  
+                <!-- Sign In Form  text-uppercase-->
+                <form>
+                    <div class="form-floating mb-2">
+                        <label for="floatingInputUsername">Ingresa Numero de Contador</label>
+                        <!-- <input type="text" class="form-control" id="floatingInputUsername" placeholder="Numero de Contador" required autofocus> -->
+                        <input type="text" class="form-control" pInputText [(ngModel)]="value"  [placeholder]="placeholder" >
+                      </div>
+        
+                      <div class="form-floating mb-2">
+                        <label for="floatingInputEmail">Ingresa tu Nombre</label>
+                        <!-- <input type="name" class="form-control" id="floatingInputEmail" placeholder="Usuario"> -->
+                        <input type="name" class="form-control" pInputText [(ngModel)]="value"  [placeholder]="placeholder" >
+                      </div>
+                      <div class="form-floating mb-2">
+                        <label for="floatingPassword">Contraseña</label>
+                        <!-- <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña"> -->
+                        <input type="password" class="form-control" pInputText [(ngModel)]="value"  [placeholder]="placeholder" >
+                      </div>
+        
+                      <div class="form-floating mb-2">
+                        <label for="floatingPasswordConfirm">Confirma Contraseña</label>
+                        <!-- <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirma Contraseña"> -->
+                        <input type="password" class="form-control" pInputText [(ngModel)]="value"  [placeholder]="placeholder" >
+                      </div>
+                      <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <label for="connected" class="form-check-label">Acepta <a href="#" class="color-red"> Terminos & Condiciones</a></label>
+                    </div>
+                      <div class="d-grid mb-2">
+                        <!-- <button class="btn btn-lg btn-primary btnPrincipal btn-login fw-bold text-uppercase" type="submit">Registrar</button> -->
+                        <button class="btn btn-lg btn-primary btn-login btnPrincipal  fw-bold mb-2" type="submit">Iniciar Sesión</button>
+                      </div>
+                      <hr>
+        
+                      <a class="d-block text-center mt-2 small" href="#">Ya tienes Cuenta? Inicia Sesion</a>
+  
+                </form>
+
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
